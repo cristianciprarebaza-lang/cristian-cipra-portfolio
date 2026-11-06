@@ -1,0 +1,76 @@
+{
+  "profile": {
+    "name": "Cristian Cipra",
+    "role": "Diseño gráfico · Marketing · Audiovisual",
+    "headline": "Ideas que conectan.<br>Diseño que comunica.",
+    "intro": "Creo piezas visuales y contenido que ayudan a las marcas a comunicar mejor, conectar con las personas y verse profesionales.",
+    "about": "Soy diseñador gráfico con formación en Cibertec y experiencia práctica creando piezas publicitarias, contenido para redes y recursos audiovisuales. Me interesa unir diseño, estrategia y narrativa para convertir ideas en comunicación clara y atractiva.",
+    "email": "hola@tudominio.com",
+    "phone": "+51 000 000 000",
+    "location": "Perú",
+    "portrait": "",
+    "cv": "",
+    "instagram": "",
+    "linkedin": "",
+    "behance": ""
+  },
+  "services": [
+    {
+      "title": "Diseño gráfico",
+      "description": "Piezas visuales claras, atractivas y coherentes con la identidad de cada marca."
+    },
+    {
+      "title": "Marketing y contenido",
+      "description": "Contenido para redes sociales pensado para comunicar, conectar y generar interés."
+    },
+    {
+      "title": "Audiovisual",
+      "description": "Edición de video, piezas promocionales y contenido en formatos digitales."
+    },
+    {
+      "title": "Motion graphics",
+      "description": "Animación gráfica para dar ritmo, intención y vida a las ideas."
+    }
+  ],
+  "projects": [
+    {
+      "id": "proyecto-01",
+      "title": "Identidad visual",
+      "category": "Branding",
+      "year": "2026",
+      "description": "Sistema visual y aplicaciones gráficas para construir una presencia de marca coherente.",
+      "image": "",
+      "url": "",
+      "featured": true
+    },
+    {
+      "id": "proyecto-02",
+      "title": "Contenido para redes",
+      "category": "Marketing",
+      "year": "2026",
+      "description": "Diseño de publicaciones y piezas de comunicación para plataformas digitales.",
+      "image": "",
+      "url": "",
+      "featured": true
+    },
+    {
+      "id": "proyecto-03",
+      "title": "Pieza audiovisual",
+      "category": "Audiovisual",
+      "year": "2026",
+      "description": "Edición y tratamiento visual de contenido audiovisual para comunicación digital.",
+      "image": "",
+      "url": "",
+      "featured": true
+    }
+  ],
+  "tools": [
+    "Adobe Photoshop",
+    "Adobe Illustrator",
+    "Affinity",
+    "Premiere Pro",
+    "After Effects",
+    "CapCut"
+  ],
+  "contactText": "¿Tienes un proyecto en mente o buscas a alguien que aporte ideas y criterio visual? Hablemos."
+}

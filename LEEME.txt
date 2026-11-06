@@ -1,0 +1,50 @@
+# Portafolio web — Cristian Cipra
+
+Sitio HTML/CSS/JavaScript con panel privado `/admin/`. El panel guarda textos, servicios, proyectos e imágenes en Netlify Blobs mediante funciones protegidas.
+
+## Publicación recomendada en Netlify (sin pagar)
+
+Para que funcione también el panel de administración, publica el proyecto conectado a GitHub (no uses solo el método de arrastrar una carpeta: ese método publica archivos estáticos y no configura las funciones del panel).
+
+1. Descomprime este ZIP.
+2. En GitHub crea un repositorio nuevo y sube **todos los archivos y carpetas** de este proyecto.
+3. En Netlify, elige **Add new project → Import an existing project → GitHub** y selecciona ese repositorio.
+4. En la configuración de variables de entorno de Netlify, añade `ADMIN_PASSWORD` con una contraseña larga, única y difícil de adivinar.
+5. Publica el sitio. Si ya se publicó antes de añadir la contraseña, ejecuta **Deploys → Trigger deploy → Deploy site**.
+
+Después visita `tusitio.netlify.app/admin/`, inicia sesión con esa contraseña y edita el contenido. La web pública se actualiza al guardar.
+
+## Editar contenido
+
+- En **Perfil** puedes cambiar titular, descripción, foto, correo y redes.
+- En **Servicios** puedes añadir o quitar servicios.
+- En **Proyectos** puedes añadir/quitar proyectos, cambiar categorías, descripciones, enlaces y subir portadas.
+- En **Otros** puedes cambiar herramientas y texto de contacto.
+- Las imágenes subidas desde el panel tienen un límite de 5 MB cada una. Conviene usar JPG/WebP optimizados.
+- Para video, pega enlaces públicos de YouTube o Vimeo en el campo de enlace del proyecto; no subas videos pesados al sitio.
+
+## Importante sobre el plan gratuito
+
+Netlify Free incluye funciones y Blob Storage, pero tiene un límite de 300 créditos al mes. Las visitas, solicitudes, funciones, ancho de banda y publicaciones consumen créditos. Al alcanzar el límite, el sitio puede pausarse hasta el siguiente ciclo. No actives recargas automáticas ni cambies a un plan de pago si quieres mantenerlo estrictamente gratis. Revisa el consumo desde el panel de Netlify.
+
+El almacenamiento Blobs no tiene control de acceso propio: estas funciones actúan como puerta de acceso. La contraseña de administración se valida en el servidor. Usa HTTPS (Netlify lo activa) y una contraseña exclusiva.
+
+## Desarrollo local opcional
+
+Requiere Node.js instalado. En la carpeta del proyecto:
+
+```powershell
+npm install
+$env:ADMIN_PASSWORD="una-clave-local-larga"
+npx netlify dev
+```
+
+Abre la URL local que muestre Netlify CLI.
+
+## Archivos principales
+
+- `index.html`, `styles.css`, `app.js`: sitio público.
+- `content.json`: contenido inicial editable y respaldo.
+- `admin/index.html`, `admin.css`, `admin.js`: panel privado.
+- `netlify/functions/`: funciones para guardar contenido y subir/servir imágenes.
+- `netlify.toml`: configuración de publicación.
