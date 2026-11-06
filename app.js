@@ -99,7 +99,7 @@ function renderProjects(items, filter) {
     : items.filter(x => x.category === filter);
 
   $('#projects').innerHTML = list.map((p, i) => {
-    const videoId = getTikTokVideoId(p.tiktokUrl || '');
+  const videoId=getTikTokVideoId(p.tiktokUrl || p.url || '');
 
     const images = Array.isArray(p.images) && p.images.length
       ? p.images.filter(Boolean)
