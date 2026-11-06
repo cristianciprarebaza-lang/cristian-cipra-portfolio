@@ -158,4 +158,28 @@
     height: 36px;
   }
 }
+/* PROYECTOS: DOS CUADROS POR FILA */
+.project-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 35px 22px;
+}
 
+/* VIDEOS CUADRADOS Y GRANDES */
+.tiktok-player {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  max-height: none;
+}
+
+.tiktok-player iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/* DOS CUADROS TAMBIÉN EN CELULARES */
+@media (max-width: 430px) {
+  .project-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px 12px;
+  }
+}
