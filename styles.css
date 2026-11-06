@@ -9,3 +9,53 @@
 .portrait-placeholder[hidden] {
   display: none !important;
 }
+
+/* INTEGRACIÓN EDITORIAL DE LA FOTOGRAFÍA */
+.portrait-wrap {
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.portrait {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  object-position: center bottom;
+  mask-image: radial-gradient(
+    ellipse 82% 88% at 50% 43%,
+    #000 57%,
+    rgba(0,0,0,.92) 72%,
+    transparent 100%
+  );
+  -webkit-mask-image: radial-gradient(
+    ellipse 82% 88% at 50% 43%,
+    #000 57%,
+    rgba(0,0,0,.92) 72%,
+    transparent 100%
+  );
+}
+
+.portrait-glow {
+  width: 90%;
+  height: 75%;
+  background: radial-gradient(
+    ellipse,
+    #ff641e30 0%,
+    #ff641e12 48%,
+    transparent 75%
+  );
+  filter: blur(35px);
+}
+
+/* ADAPTACIÓN A MÓVILES */
+@media (max-width: 800px) {
+  .portrait-wrap {
+    height: 390px;
+  }
+
+  .portrait {
+    max-height: 390px;
+  }
+}
