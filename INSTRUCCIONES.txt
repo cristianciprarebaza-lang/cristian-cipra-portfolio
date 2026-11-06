@@ -1,0 +1,21 @@
+ACTUALIZACION: REPRODUCTOR DE TIKTOK EN EL PORTAFOLIO
+
+Reemplaza estos dos archivos en tu repositorio de GitHub:
+1. app.js (en la carpeta principal, junto a index.html)
+2. admin.js (dentro de admin/)
+
+No reemplaces ni borres los demás archivos.
+
+Después de hacer Commit changes, Netlify publicará los cambios automáticamente.
+
+Uso:
+- Abre /admin/
+- Edita o crea un proyecto
+- En el nuevo campo 'Enlace del video de TikTok' pega el enlace completo del video.
+- Guarda los cambios.
+- Abre el portafolio: el video aparecerá reproducible dentro de la tarjeta.
+
+Importante:
+- Usa el enlace completo de un video público de TikTok que contenga /video/ y el número del video.
+- Enlaces cortos vm.tiktok.com o vt.tiktok.com pueden no ser reconocidos directamente; abre el enlace en el navegador y copia la dirección final.
+- La reproducción incrustada depende de que TikTok permita mostrar ese video en reproductores externos y de que el navegador no bloquee contenido de terceros.
