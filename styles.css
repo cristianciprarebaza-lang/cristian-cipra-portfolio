@@ -59,3 +59,103 @@
     max-height: 390px;
   }
 }
+
+/* GALERÍA DE PROYECTOS */
+.project-gallery {
+  position: relative;
+  width: 100%;
+}
+
+.project-gallery .project-image {
+  position: relative;
+}
+
+.project-gallery .project-image img {
+  cursor: zoom-in;
+}
+
+.gallery-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 42px;
+  height: 42px;
+  border: 1px solid #ffffff55;
+  border-radius: 50%;
+  background: #090909b8;
+  color: white;
+  font-size: 27px;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 2;
+  transition: background .2s, border-color .2s;
+}
+
+.gallery-arrow:hover {
+  background: var(--orange);
+  border-color: var(--orange);
+  color: #111;
+}
+
+.gallery-prev {
+  left: 14px;
+}
+
+.gallery-next {
+  right: 14px;
+}
+
+.gallery-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 13px;
+}
+
+.gallery-count {
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  color: #aaa;
+  font-variant-numeric: tabular-nums;
+}
+
+.gallery-dots {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.gallery-dot {
+  width: 7px;
+  height: 7px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: #555;
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.gallery-dot.active {
+  width: 21px;
+  border-radius: 5px;
+  background: var(--orange);
+}
+
+@media(max-width:800px) {
+  .project-gallery .project-image {
+    height: 260px;
+  }
+}
+
+@media(max-width:430px) {
+  .project-gallery .project-image {
+    height: 225px;
+  }
+
+  .gallery-arrow {
+    width: 36px;
+    height: 36px;
+  }
+}
+
